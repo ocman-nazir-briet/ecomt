@@ -1,0 +1,17 @@
+<h3>Add Product</h3>
+<form class="footer-form d-flex mb-0" method='POST' action='/addProduct' enctype='multipart/form-data'>
+    {% csrf_token %}
+    <p>Enter Title</p>
+    <p>{{form3.title}}</p>
+    <p>Enter Des</p>
+    <p>{{form3.des}}</p>
+    <p>Enter Price</p>
+    <p>{{form3.price}}</p>
+    <p>Upload image</p>
+    <p>{{form3.image}}</p>
+    <p>Select Cat</p>
+    <p>{{form3.Category}}</p>
+    <p>Select SubCat</p>
+    <p>{{form3.subCategory}}</p>
+    <button type="submit">Add Product </button><br>
+  </form>
